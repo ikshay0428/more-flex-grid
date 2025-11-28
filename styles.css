@@ -142,7 +142,7 @@ nav ul{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 16px;
 }
 
@@ -235,9 +235,9 @@ p{
     /* TO DO */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(412px, 1fr));
-    grid-gap: 32px;
+    gap: 32px;
     justify-items: center;
-    align-items: start;
+    text-align: center;
 }
 
 #plants h3, #plants > p{
@@ -263,6 +263,7 @@ p{
 #plants img{
     /* Styles were added here to arrange the content, I used a property for a flexbox child to change the order that the content appears on the page */
     /* TO DO */
+    display: block;
     order: -1;
     width: 100%;
     max-width: 400px;
@@ -289,6 +290,7 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 32px;
     justify-items: center;
+    text-align: center;
 }
 
 /* Contact Heading and Paragraph */
@@ -387,6 +389,7 @@ th:nth-of-type(even), td:nth-of-type(even){
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 16px;
     justify-items: center;
+    align-items: center;
     width: fit-content;
     margin: 16px auto;
     list-style-type: none;
